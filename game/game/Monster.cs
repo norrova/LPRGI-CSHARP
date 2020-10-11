@@ -1,7 +1,7 @@
 ﻿using System;
 namespace game
 {
-    public class Monster
+    public class Monster : PnjInterface
     {
         private string m_name;
         private int m_lifePoint;

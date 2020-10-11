@@ -52,15 +52,13 @@ namespace game
 
         public void ShowScore()
         {
-            string v_result;
-            if(m_hero.MonsterKilled > 0)
+            if (m_hero.LifePoint <= 0)
+                Console.WriteLine("Votre héros est mort");
+            if (m_hero.MonsterKilled > 0)
             {
                 string v_monsterPlurial = m_hero.MonsterKilled > 1 ? "monstres" : "monstre";
-                v_result = $"Votre héros a assassiné {m_hero.MonsterKilled} {v_monsterPlurial} !";
+                Console.WriteLine($"Votre héros a assassiné {m_hero.MonsterKilled} {v_monsterPlurial} !");
             }
-            else
-                v_result = "Votre héros est mort !";
-            Console.WriteLine(v_result);
         }
     }
 }
