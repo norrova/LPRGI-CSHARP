@@ -1,7 +1,7 @@
 ﻿using System;
-namespace game.Monsters
+namespace game.Monstres.Types
 {
-    public class Gobelin : Monster
+    public class Gobelin : Monstre
     {
         public Gobelin(int p_lifePoint, int p_attackValue) : base(p_lifePoint, p_attackValue)
         {
