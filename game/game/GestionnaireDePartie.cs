@@ -115,13 +115,13 @@ namespace game
 
         private void CheckHeroEvolution()
         {
-            if (5 == m_hero.MonsterKilled)
+            if (5 == m_hero.MonsterKilled && m_hero.LifePoint > 0)
             {
                 Console.ForegroundColor = ConsoleColor.Blue;
                 m_hero = (Hero)RamdomHerosSpe();
                 Console.WriteLine($"Evolution du héros en : {m_hero.GetType().Name}");
+                Console.ResetColor();
             }
-            Console.ResetColor();
         }
 
         private Object RamdomMonsters()
