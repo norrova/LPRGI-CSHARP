@@ -71,12 +71,14 @@ namespace game
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Votre héros est mort");
             }
+
             if (m_hero.MonsterKilled > 0)
             {
                 Console.ForegroundColor = ConsoleColor.Green;
                 string v_monsterPlurial = m_hero.MonsterKilled > 1 ? "monstres" : "monstre";
                 Console.WriteLine($"Votre héros a assassiné {m_hero.MonsterKilled} {v_monsterPlurial} !");
             }
+
             Console.ResetColor();
         }
 
@@ -128,21 +130,23 @@ namespace game
         {
             Type v_type = GetAleatoryType(m_monsters);
             int v_life = 0, v_attack = 0;
-            if (v_type == typeof(Gobelin))
+
+            switch (v_type)
             {
-                v_life = m_rand.Next(39, 50);
-                v_attack = m_rand.Next(50, 100);
+                case Type type when type == typeof(Gobelin):
+                    v_life = m_rand.Next(39, 50);
+                    v_attack = m_rand.Next(50, 100);
+                    break;
+                case Type type when type == typeof(Squelette):
+                    v_life = m_rand.Next(70, 100);
+                    v_attack = m_rand.Next(5, 25);
+                    break;
+                case Type type when type == typeof(Sorciere):
+                    v_life = m_rand.Next(70, 100);
+                    v_attack = m_rand.Next(5, 25);
+                    break;
             }
-            else if (v_type == typeof(Squelette))
-            {
-                v_life = m_rand.Next(70, 100);
-                v_attack = m_rand.Next(5, 25);
-            }
-            else if (v_type == typeof(Sorciere))
-            {
-                v_attack = m_rand.Next(5, 25);
-                v_life = m_rand.Next(70, 100);
-            }
+
             return Activator.CreateInstance(v_type, v_life, v_attack);
         }
 
