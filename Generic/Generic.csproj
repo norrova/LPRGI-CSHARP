@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Utilities\" />
+    <Folder Include="Sample\" />
+    <Folder Include="Sample\Human\" />
+    <Folder Include="Sample\Human\Student\" />
+    <Folder Include="Sample\Human\Person\" />
+    <Folder Include="Sample\Phone\" />
+    <Folder Include="Sample\ReversePhoneBook\" />
+    <Folder Include="Sample\AutomaticCash\" />
+    <Folder Include="Sample\Human\Customer\" />
+    <Folder Include="Sample\Game\" />
+    <Folder Include="Sample\Game\Card\" />
+  </ItemGroup>
+</Project>
