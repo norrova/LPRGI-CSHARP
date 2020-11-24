@@ -13,6 +13,7 @@ namespace Project
             Console.WriteLine("Exercice 1");
             String m_text = "Lorem ipsum";
             Console.WriteLine(m_text.GetParagraph());
+            Console.WriteLine(m_text.GetTitle(1));
 
             var data = new[]
             {
@@ -628,6 +629,10 @@ namespace Project
             Console.WriteLine("Exercice 2.2");
             int v_maxCommand = data.Max(p_obj => p_obj.NombreCommande);
             var v_person = data.First(p_obj => p_obj.NombreCommande == v_maxCommand);
+            Console.WriteLine(new Person(v_person.Prenom, v_person.Nom, v_person.NombreCommande, v_person.PointsFidelite));
+
+            // Deuxième méthode avec une boucle
+            v_person = data.OrderByDescending(p_obj => p_obj.NombreCommande).First();
             Console.WriteLine(new Person(v_person.Prenom, v_person.Nom, v_person.NombreCommande, v_person.PointsFidelite));
 
             Console.WriteLine(Environment.NewLine);
