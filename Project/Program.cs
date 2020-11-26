@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Project
@@ -7,10 +8,7 @@ namespace Project
     {
         static void Main(string[] args)
         {
-            Asynchrone.CopyDirectory(
-                "/Users/valentinnorro/Documents/LPRGI/LPRGI-CSHARP/Test Déplacement/Source",
-                "/Users/valentinnorro/Documents/LPRGI/LPRGI-CSHARP/Test Déplacement/Dest"
-            );
+            Asynchrone.Run();
         }
     }
 }
