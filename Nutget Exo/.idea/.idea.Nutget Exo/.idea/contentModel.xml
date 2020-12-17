@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\drigtime\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\drigtime\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_Nutget Exo.255352222.00" t="ExcludeRecursive" />
+    <e p="C:\Users\drigtime\RiderProjects\Nutget Exo" t="IncludeFlat">
+      <e p="Nutget Exo" t="IncludeRecursive">
+        <e p="ApiHelper.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Model.cs" t="Include" />
+        <e p="Nutget Exo.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="Nutget Exo.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+      </e>
+      <e p="Nutget Exo.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
